@@ -1,0 +1,378 @@
+/* [1]   Navigation PART */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px
+}
+
+/* :root {
+    --navbar-height: 59px;
+} */
+
+
+/* new */
+html
+{
+  scrolling-type: smooth-scrolling;
+}
+
+body
+{
+    font-family: 'Poppins',sans-serif;
+}
+/* end */
+
+#navbar
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    /* new */
+    flex-direction: column;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+  }
+
+#logo{
+     /* margin: 15px 16px; */
+    margin: 8px 18px;
+    padding: 7px 7px;
+}
+#logo img
+{
+    /* height: 82px;
+    margin: -7px 14px; */
+    height: 45px;
+}
+
+#navbar ul
+{
+    font-family: 'Tilt Warp', cursive;
+
+    display: flex;
+    
+}
+
+#navbar ul li
+{
+    list-style: none;
+    padding: 10px;
+    font-size: 1.2em;   
+}
+
+#navbar ul li a
+{
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    /* new */
+    transition: 0.5s ease-out;
+}
+
+#navbar ul li a:hover
+{
+    color: black;
+    background-color: white;
+}
+
+/* [2] Home PART */
+#home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 20px;
+    height: 415px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../background/pexels-desativado-2433978.jpg') no-repeat center center/ cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    /* new */
+    filter:brightness(0.7);
+}
+
+#home h1
+{
+    font-family: 'Bree Serif', serif;
+    color: white;
+    text-align: center;
+    /* new */
+    position: relative;
+}
+
+#home p
+{
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* #services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+   
+    border: 2px solid brown;
+    padding: 17px 6px;
+    margin: 34px 5px;
+    border-radius: 28px;
+    background-color: #b59999;
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+    
+
+}
+
+#services .box p {
+    font-size: 15px;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+
+} */
+
+
+#services-container::before
+{
+    content: "";
+    position: absolute;
+    background: white;
+    height: 63%;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+   
+    border: 2px solid brown;
+    padding: 17px 6px;
+    margin: 34px 5px;
+    border-radius: 28px;
+    background-color: #b59999;
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+    
+
+}
+
+#services .box p {
+    font-size: 15px;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+
+}
+#services
+{
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+    justify-content:space-evenly;
+    
+}
+
+.box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 28vw;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #eaeaea;
+    transition: 0.5s ease-out;
+}
+
+#services div img
+{
+    width: 60%;
+}
+
+#services div:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 2px grey;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#services h2
+{
+    font-size: 2rem;
+}
+
+/* #client section:: {} */
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    /* height: 124px; */
+    /* NEw */
+    position: relative;
+    width: 9vw;
+    filter: drop-shadow(0px 0px 20px black);
+    
+}
+
+.client-items {
+    padding: 34px;
+}
+
+/* new */
+.center
+{
+    text-align: center;
+}
+.h-primary center{
+    font-size: 3.4rem;
+    padding: 12px;
+}
+.head {
+    background: rgb(0, 132, 255);
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+  
+  .head h1,
+  .head p {
+    text-align: center;
+    color: white;
+  }
+  .btn
+{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn:hover
+{
+    background-color: #a9772c;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+#contact{
+    position: relative;
+    /* new */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact/contact-us-contact-call-us-phone-communication.jpg') no-repeat center center/cover;
+
+}
+.contact-box h1 {
+    /* background: rgb(0, 132, 255); */
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 40px;
+  }
+  
+  .contact-box h1 {
+    text-align: center;
+    color: white;
+    filter: drop-shadow(0px 0px 20px black);
+  }
+  
+  label {
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  
+  label p {
+    display: inline-block;
+    filter: drop-shadow(0px 0px 20px black);
+  }
+  
+  input,
+  textarea {
+    display: block;
+    padding: 16px;
+    margin: 5px 20px 20px 20px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 80%;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    margin: 0px auto;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border: 1px solid rgb(0, 132, 255);
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+footer{
+    background-color:black;
+    color: white;
+    padding:9px 20px;
+}
